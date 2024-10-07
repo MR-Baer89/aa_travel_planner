@@ -1,6 +1,7 @@
 import 'dart:developer';
-import 'package:aa_travel_planner/repositories/favorites_repository.dart';
-import 'package:aa_travel_planner/widgets/favorites_screen.dart';
+import 'package:aa_travel_planner/features/favorites/widgets/go_back_button.dart';
+import 'package:aa_travel_planner/features/favorites/repositories/favorites_repository.dart';
+import 'package:aa_travel_planner/features/favorites/widgets/favorites_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -806,17 +807,7 @@ class TripDetailsScreen extends StatelessWidget {
               const SizedBox(height: 8),
               Text(trip.itinerary, style: const TextStyle(fontSize: 16)),
               const SizedBox(height: 16),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                style:
-                    ElevatedButton.styleFrom(backgroundColor: Colors.teal[600]),
-                child: const Text(
-                  'Go Back',
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
+              const goBackButton(),
             ],
           ),
         ),

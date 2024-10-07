@@ -1,4 +1,4 @@
-import 'package:aa_travel_planner/repositories/favorites_repository.dart';
+import 'package:aa_travel_planner/features/favorites/repositories/favorites_repository.dart';
 import 'package:aa_travel_planner/main.dart';
 import 'package:flutter/material.dart';
 
